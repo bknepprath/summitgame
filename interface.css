@@ -1,0 +1,22 @@
+:root {
+	font-family: monospace;
+	font-size: 18px;
+	text-align: center;
+}	
+
+div.individualnameselector {
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	border: 1px black;
+	border-style: solid;
+	width: 100px;
+	margin: 10px;
+}
+div.individualnameselector:hover {
+	background: yellow;
+}
+
+#title {
+	font-size: 24px;
+}
