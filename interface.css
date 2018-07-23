@@ -20,3 +20,70 @@ div.individualnameselector:hover {
 #title {
 	font-size: 24px;
 }
+
+#jddiv {
+	display: none;
+}
+#jd2 {
+	display: none;
+}
+#jd3 {
+	display: none;
+}
+#ghostname {
+	font-size: 20px;
+	color: red;
+}
+#ghosthealthholder {
+	position: absolute;
+	border: 1px black;
+	border-style: solid;
+	width: 100px;
+	margin: 10px;
+	bottom: 100px;
+	left: 0px;
+}
+#ghostamountholder {
+	position: absolute;
+	border: 1px black;
+	border-style: solid;
+	width: 100px;
+	margin: 10px;
+	bottom: 0px;
+	left: 0px;
+}
+#goSanctuarybutton{
+	display: none;
+}
+
+.choices {
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	border: 1px black;
+	border-style: solid;
+	width: 200px;
+	margin: 10px;
+}
+.noselect { 
+-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
+
+#backbutton {
+	position: absolute;
+	border: 1px black;
+	border-style: solid;
+	width: 100px;
+	margin: 10px;
+	bottom: 0px;
+	right: 0px;
+	display: none;
+}
+#backbutton:hover {
+	background: yellow;
+}
