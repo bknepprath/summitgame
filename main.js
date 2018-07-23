@@ -1,5 +1,237 @@
 var siteLayout = 1;
 
+//zach stuff
+var meleeSkill = 0;
+var titlenumber = 0;
+var zachmeleetitlearray = ["Loser", "Casual", "Best at the party", "Competitor", "Tourney-Goer", "Top-16", "Top Local Player", "Top-8", "Arcadian Potential", "Top-3", "PR Player", "Grand Finals", "Top Player", "Best in State", "Top 8 Regional", "Regional Winner", "Beat a God", "National winner", "Good enough to dual-main", "God Slayer", "God", "New Era", "20XX"];
+var zachmeleetitle = 0;
+
+function startZach(){
+	siteLayout = 3;
+}
+function addMeleeSkill(){
+	meleeSkill += 1;
+	if(meleeSkill<50){
+		zachmeleetitle = zachmeleetitlearray[0];
+	}
+	if(meleeSkill>49 && meleeSkill<200){
+		zachmeleetitle = zachmeleetitlearray[1];
+	}
+	if(meleeSkill>199 && meleeSkill<500){
+		zachmeleetitle = zachmeleetitlearray[2];
+	}
+	if(meleeSkill>499 && meleeSkill<1000){
+		zachmeleetitle = zachmeleetitlearray[3];
+	}4
+	if(meleeSkill>999 && meleeSkill<2000){
+		zachmeleetitle = zachmeleetitlearray[4];
+	}
+	if(meleeSkill>1999 && meleeSkill<5000){
+		zachmeleetitle = zachmeleetitlearray[5];
+	}
+	if(meleeSkill>4999 && meleeSkill<7500){
+		zachmeleetitle = zachmeleetitlearray[6];
+	}
+	if(meleeSkill>7499 && meleeSkill<10000){
+		zachmeleetitle = zachmeleetitlearray[7];
+	}
+	if(meleeSkill>9999 && meleeSkill<15000){
+		zachmeleetitle = zachmeleetitlearray[8];
+	}
+	if(meleeSkill>14999 && meleeSkill<25000){
+		zachmeleetitle = zachmeleetitlearray[9];
+	}
+	if(meleeSkill>24999 && meleeSkill<40000){
+		zachmeleetitle = zachmeleetitlearray[10];
+	}
+	if(meleeSkill>39999 && meleeSkill<90000){
+		zachmeleetitle = zachmeleetitlearray[11];
+	}
+	if(meleeSkill>89999 && meleeSkill<120000){
+		zachmeleetitle = zachmeleetitlearray[12];
+	}
+	if(meleeSkill>119999 && meleeSkill<180000){
+		zachmeleetitle = zachmeleetitlearray[13];
+	}
+	if(meleeSkill>189999 && meleeSkill<250000){
+		zachmeleetitle = zachmeleetitlearray[14];
+	}
+	if(meleeSkill>249999 && meleeSkill<500000){
+		zachmeleetitle = zachmeleetitlearray[15];
+	}
+	if(meleeSkill>499999 && meleeSkill<800000){
+		zachmeleetitle = zachmeleetitlearray[16];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[17];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[18];
+	}
+	if(meleeSkill>1199999 && meleeSkill<1800000){
+		zachmeleetitle = zachmeleetitlearray[19];
+	}
+	if(meleeSkill>1799999 && meleeSkill<2500000){
+		zachmeleetitle = zachmeleetitlearray[20];
+	}
+	if(meleeSkill>2499999 && meleeSkill<4500000){
+		zachmeleetitle = zachmeleetitlearray[21];
+	}
+	if(meleeSkill>3999999 && meleeSkill<7000000){
+		zachmeleetitle = zachmeleetitlearray[22];
+	}
+	document.getElementById("meleeSkill").innerHTML = meleeSkill;
+	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
+}
+function addMeleeSkill2(){
+	meleeSkill += (10+((Math.floor((Math.random()*meleeSkill))/4)));
+	if(meleeSkill<50){
+		zachmeleetitle = zachmeleetitlearray[0];
+	}
+	if(meleeSkill>49 && meleeSkill<200){
+		zachmeleetitle = zachmeleetitlearray[1];
+	}
+	if(meleeSkill>199 && meleeSkill<500){
+		zachmeleetitle = zachmeleetitlearray[2];
+	}
+	if(meleeSkill>499 && meleeSkill<1000){
+		zachmeleetitle = zachmeleetitlearray[3];
+	}4
+	if(meleeSkill>999 && meleeSkill<2000){
+		zachmeleetitle = zachmeleetitlearray[4];
+	}
+	if(meleeSkill>1999 && meleeSkill<5000){
+		zachmeleetitle = zachmeleetitlearray[5];
+	}
+	if(meleeSkill>4999 && meleeSkill<7500){
+		zachmeleetitle = zachmeleetitlearray[6];
+	}
+	if(meleeSkill>7499 && meleeSkill<10000){
+		zachmeleetitle = zachmeleetitlearray[7];
+	}
+	if(meleeSkill>9999 && meleeSkill<15000){
+		zachmeleetitle = zachmeleetitlearray[8];
+	}
+	if(meleeSkill>14999 && meleeSkill<25000){
+		zachmeleetitle = zachmeleetitlearray[9];
+	}
+	if(meleeSkill>24999 && meleeSkill<40000){
+		zachmeleetitle = zachmeleetitlearray[10];
+	}
+	if(meleeSkill>39999 && meleeSkill<90000){
+		zachmeleetitle = zachmeleetitlearray[11];
+	}
+	if(meleeSkill>89999 && meleeSkill<120000){
+		zachmeleetitle = zachmeleetitlearray[12];
+	}
+	if(meleeSkill>119999 && meleeSkill<180000){
+		zachmeleetitle = zachmeleetitlearray[13];
+	}
+	if(meleeSkill>189999 && meleeSkill<250000){
+		zachmeleetitle = zachmeleetitlearray[14];
+	}
+	if(meleeSkill>249999 && meleeSkill<500000){
+		zachmeleetitle = zachmeleetitlearray[15];
+	}
+	if(meleeSkill>499999 && meleeSkill<800000){
+		zachmeleetitle = zachmeleetitlearray[16];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[17];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[18];
+	}
+	if(meleeSkill>1199999 && meleeSkill<1800000){
+		zachmeleetitle = zachmeleetitlearray[19];
+	}
+	if(meleeSkill>1799999 && meleeSkill<2500000){
+		zachmeleetitle = zachmeleetitlearray[20];
+	}
+	if(meleeSkill>2499999 && meleeSkill<4500000){
+		zachmeleetitle = zachmeleetitlearray[21];
+	}
+	if(meleeSkill>3999999 && meleeSkill<7000000){
+		zachmeleetitle = zachmeleetitlearray[22];
+	}
+	document.getElementById("meleeSkill").innerHTML = meleeSkill;
+	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
+}
+function addMeleeSkill3(){
+	meleeSkill += (10+(Math.floor(Math.random()*10)));
+	if(meleeSkill<50){
+		zachmeleetitle = zachmeleetitlearray[0];
+	}
+	if(meleeSkill>49 && meleeSkill<200){
+		zachmeleetitle = zachmeleetitlearray[1];
+	}
+	if(meleeSkill>199 && meleeSkill<500){
+		zachmeleetitle = zachmeleetitlearray[2];
+	}
+	if(meleeSkill>499 && meleeSkill<1000){
+		zachmeleetitle = zachmeleetitlearray[3];
+	}4
+	if(meleeSkill>999 && meleeSkill<2000){
+		zachmeleetitle = zachmeleetitlearray[4];
+	}
+	if(meleeSkill>1999 && meleeSkill<5000){
+		zachmeleetitle = zachmeleetitlearray[5];
+	}
+	if(meleeSkill>4999 && meleeSkill<7500){
+		zachmeleetitle = zachmeleetitlearray[6];
+	}
+	if(meleeSkill>7499 && meleeSkill<10000){
+		zachmeleetitle = zachmeleetitlearray[7];
+	}
+	if(meleeSkill>9999 && meleeSkill<15000){
+		zachmeleetitle = zachmeleetitlearray[8];
+	}
+	if(meleeSkill>14999 && meleeSkill<25000){
+		zachmeleetitle = zachmeleetitlearray[9];
+	}
+	if(meleeSkill>24999 && meleeSkill<40000){
+		zachmeleetitle = zachmeleetitlearray[10];
+	}
+	if(meleeSkill>39999 && meleeSkill<90000){
+		zachmeleetitle = zachmeleetitlearray[11];
+	}
+	if(meleeSkill>89999 && meleeSkill<120000){
+		zachmeleetitle = zachmeleetitlearray[12];
+	}
+	if(meleeSkill>119999 && meleeSkill<180000){
+		zachmeleetitle = zachmeleetitlearray[13];
+	}
+	if(meleeSkill>189999 && meleeSkill<250000){
+		zachmeleetitle = zachmeleetitlearray[14];
+	}
+	if(meleeSkill>249999 && meleeSkill<500000){
+		zachmeleetitle = zachmeleetitlearray[15];
+	}
+	if(meleeSkill>499999 && meleeSkill<800000){
+		zachmeleetitle = zachmeleetitlearray[16];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[17];
+	}
+	if(meleeSkill>799999 && meleeSkill<1200000){
+		zachmeleetitle = zachmeleetitlearray[18];
+	}
+	if(meleeSkill>1199999 && meleeSkill<1800000){
+		zachmeleetitle = zachmeleetitlearray[19];
+	}
+	if(meleeSkill>1799999 && meleeSkill<2500000){
+		zachmeleetitle = zachmeleetitlearray[20];
+	}
+	if(meleeSkill>2499999 && meleeSkill<4500000){
+		zachmeleetitle = zachmeleetitlearray[21];
+	}
+	if(meleeSkill>3999999 && meleeSkill<7000000){
+		zachmeleetitle = zachmeleetitlearray[22];
+	}
+	document.getElementById("meleeSkill").innerHTML = meleeSkill;
+	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
+}
+
 //global JD variables
 var choiceAhighlight = 0;
 var choiceBhighlight = 0;
@@ -236,7 +468,6 @@ function shuffle(array){
 	return array;
 }
 
-//
 function makeChoiceArrayPair(){
 	choiceArray = shuffle(choiceArray);
 	choiceArray2 = choiceArray;
@@ -276,6 +507,10 @@ window.setInterval(function(){
 	if(siteLayout == 2){
 		mainmenu.style.display = "none";
 		jddiv.style.display = "inline-block";
+	}
+	if(siteLayout == 3){
+		mainmenu.style.display = "none";
+		zachdiv.style.display = "inline-block";
 	}
 	if(siteLayout != 1){
 		backbutton.style.display = "block";
