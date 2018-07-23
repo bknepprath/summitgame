@@ -29,7 +29,7 @@
 				<div class="individualnameselector" id="lukenameselector">
 					<h2>Luke</h2>
 				</div>
-				<div class="individualnameselector" id="zachnameselector">
+				<div class="individualnameselector" id="zachnameselector" onclick="startZach()">
 					<h2>Zach</h2>
 				</div>
 			</div>
@@ -79,15 +79,34 @@
 				<div id="ghostamountholder">
 					Ghosts left: <span id="ghostsleft"></span>
 				</div>
-				<span id="choiceArray">1</span>
-				<span id="choiceArray2">1</span>
+				<div style="color:white;">
+					<span id="choiceArray">1</span>
+					<span id="choiceArray2">1</span>
+				</div>
 			</div>
 			<div id="jd3">
-				<p>JD: Thanks for rapping with me! You killed all the restless souls. Nice man.</p>
+				<p>JD: Thanks for rapping with me! You killed all the restless souls. Nice man. I'll go text that girl now.</p>
 			</div>
 		</div>
 		<div id="backbutton" onclick="resetSite();">
 			<h2>Back</h2>
+		</div>
+		
+		<div id="zachdiv">
+			<div>
+				<button onclick="addMeleeSkill()">Practice Tech</button>
+				<button onclick="addMeleeSkill3()">Play Friendlies</button>
+				<button onclick="addMeleeSkill2()">Go to tournament</button><br /><br />
+			</div>
+			<div>
+				Title: <span id="zachmeleetitle">0</span>
+			</div>
+			<div>
+				Melee Skill: <span id="meleeSkill">0</span>
+			</div>
+			<div id="backbutton" onclick="resetSite();">
+				<h2>Back</h2>
+			</div>
 		</div>
     </body>
 </HTML>
