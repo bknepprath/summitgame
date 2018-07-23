@@ -36,11 +36,58 @@
 		</div>
 		
 		<div id="jddiv">
-			
+			<div id="jd1">
+				<div>
+					<p>We all know that JD has been spending some serious time in the ol' <span id="iowaillinoisohio"></span> these days. Has he been completely honest about his experiences thusfar? We will see.<br /><br />
+					You: Hello, JD.<br /><br />
+					JD: Hello I am just here working on my <span id="rapadjective"></span> <span id="rapnoun"></span>, ya dig?<br /><br />
+					You: ... Maybe.<br /><br />
+					JD: Oh, no! Okay, I'll admit it. The church is haunted by ghosts! The only way to beat them is by rapping, help me out! You try it, too!
+					</p>
+				</div>
+				<div>
+					<button onclick="goChurch();">Go to church</button>
+				</div>
+			</div>
+			<div id="jd2">
+				<div>
+					Location: <span id="jdlocation"></span>
+				</div>
+				<div>
+					<p>JD: We're in the entryway! Kill the ghosts by mousing over words that rhyme!</p>
+				</div>
+				<div id="ghostname">
+					<span id="ghostnamechoice">ghost name</span><br /><br /><br /><br />
+				</div>
+				<div class="noselect">
+					<div class="choices" id="choiceA" onmouseover="makeChoiceAhighlight1()" onmouseleave="checkChoices()">
+						<h2><span id="rhymeword1">hi</span></h2>
+					</div>
+					<div class="choices" id="choiceB" onmouseover="makeChoiceBhighlight1()" onmouseleave="checkChoices()">
+						<h2><span id="rhymeword2">hi</span></h2>
+					</div>
+					<div class="choices" id="choiceC" onmouseover="makeChoiceChighlight1()" onmouseleave="checkChoices()">
+						<h2><span id="rhymeword3">hi</span></h2>
+					</div>
+					<div class="choices" id="choiceD" onmouseover="makeChoiceDhighlight1()" onmouseleave="checkChoices()">
+						<h2><span id="rhymeword4">hi</span></h2>
+					</div>
+				</div>
+				<div id="ghosthealthholder">
+					Ghost health: <span id="ghosthealth"></span>
+				</div>
+				<div id="ghostamountholder">
+					Ghosts left: <span id="ghostsleft"></span>
+				</div>
+				<span id="choiceArray">1</span>
+				<span id="choiceArray2">1</span>
+			</div>
+			<div id="jd3">
+				<p>JD: Thanks for rapping with me! You killed all the restless souls. Nice man.</p>
+			</div>
 		</div>
-		
-		<div id="backbutton">
-			<button>Back</button>
+		<div id="backbutton" onclick="resetSite();">
+			<h2>Back</h2>
 		</div>
     </body>
 </HTML>
