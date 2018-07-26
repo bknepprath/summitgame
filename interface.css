@@ -27,6 +27,18 @@ div.individualnameselector:hover {
 #zachdiv {
 	display: none;
 }
+#briandiv {
+	display: none;
+}
+#jamesdiv {
+	display: none;
+}
+#jondiv {
+	display: none;
+}
+#lukediv {
+	display: none;
+}
 #jd2 {
 	display: none;
 }
@@ -54,6 +66,15 @@ div.individualnameselector:hover {
 	margin: 10px;
 	bottom: 0px;
 	left: 0px;
+}
+#fired{
+	display: none;
+}
+#agirlintranslationp {
+	display: none;
+}
+#straight {
+	display: none;
 }
 #goSanctuarybutton{
 	display: none;
