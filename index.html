@@ -14,19 +14,19 @@
 			</div>
 			
 			<div>
-				<div class="individualnameselector" id="briannameselector">
+				<div class="individualnameselector" id="briannameselector" onclick="startbrian()">
 					<h2>Brian</h2>
 				</div>
-				<div class="individualnameselector" id="jamesnameselector">
+				<div class="individualnameselector" id="jamesnameselector" onclick="startjames()">
 					<h2>James</h2>
 				</div>
 				<div class="individualnameselector" id="jdnameselector" onclick="startJd()">
 					<h2>JD</h2>
 				</div>
-				<div class="individualnameselector" id="jonnameselector">
+				<div class="individualnameselector" id="jonnameselector" onclick="startjon()">
 					<h2>Jon</h2>
 				</div>
-				<div class="individualnameselector" id="lukenameselector">
+				<div class="individualnameselector" id="lukenameselector" onclick="startluke()">
 					<h2>Luke</h2>
 				</div>
 				<div class="individualnameselector" id="zachnameselector" onclick="startZach()">
@@ -107,6 +107,30 @@
 			<div id="backbutton" onclick="resetSite();">
 				<h2>Back</h2>
 			</div>
+		</div>
+		
+		<div id="briandiv">
+			<p>Brian is too busy goofing off to play with you.</p><br /><br />
+			<p>Click this button to reveal the last book that Brian read.</p>
+			<button onclick="agirlintranslation()">Reveal</button>
+			<p id="agirlintranslationp">A Girl in Translation</p>
+		</div>
+		<div id="lukediv">
+			<p>Luke is stuck looking for people to play baseball or softball or something. He is too busy to be a silly boy with you.</p><br />
+			<button onclick="revealsex()">Reveal Sexuality</button><br />
+			<p id="straight">Straight</p>
+		</div>
+		
+		<div id="jamesdiv">
+			<p>James is too busy trying to not laugh when his students make vaguely sexual remarks to play with you.</p><br />
+			<p>Make sure James does not laugh!!</p><br />
+			<button onclick="containlaughter()">Contain Laughter</button><br /><br />
+			Laugh Meter: <span id="laughmeter">0</span>
+			<p id="fired">James is fired!! :(</p>
+		</div>
+		
+		<div id="jondiv">
+			<p>Jon spends all his extra time these days as a volunteer firefighter in the dry lands of Colorado. He cannot play with you, idiot. Jon's section sucks because there's actually nothing to do here. He's probably really jealous of everyone else.</p>
 		</div>
     </body>
 </HTML>
