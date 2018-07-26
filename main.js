@@ -3,8 +3,11 @@ var siteLayout = 1;
 //zach stuff
 var meleeSkill = 0;
 var titlenumber = 0;
-var zachmeleetitlearray = ["Loser", "Casual", "Best at the party", "Competitor", "Tourney-Goer", "Top-16", "Top Local Player", "Top-8", "Arcadian Potential", "Top-3", "PR Player", "Grand Finals", "Top Player", "Best in State", "Top 8 Regional", "Regional Winner", "Beat a God", "National winner", "Good enough to dual-main", "God Slayer", "God", "New Era", "20XX"];
+var zachmeleetitlearray = ["Loser", "Casual", "Best at the party", "Competitor", "Tourney-Goer", "Top-16", "Top Local Player", "Top-8", "Arcadian Potential", "Top-3", "PR Player", "Grand Finals", "Top Player", "Best in State", "Top 8 Regional", "Regional Winner", "Beat a God", "National winner", "Good enough to dual-main", "God Slayer", "God", "New Era", "20XX", "Loser"];
 var zachmeleetitle = 0;
+
+var laughmeter = 0;
+jamesstart = 0;
 
 function startZach(){
 	siteLayout = 3;
@@ -80,6 +83,9 @@ function addMeleeSkill(){
 	if(meleeSkill>3999999 && meleeSkill<7000000){
 		zachmeleetitle = zachmeleetitlearray[22];
 	}
+	if(meleeSkill>6999999 && meleeSkill<30000000){
+		zachmeleetitle = zachmeleetitlearray[23];
+	}
 	document.getElementById("meleeSkill").innerHTML = meleeSkill;
 	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
 }
@@ -153,6 +159,9 @@ function addMeleeSkill2(){
 	}
 	if(meleeSkill>3999999 && meleeSkill<7000000){
 		zachmeleetitle = zachmeleetitlearray[22];
+	}
+	if(meleeSkill>6999999 && meleeSkill<30000000){
+		zachmeleetitle = zachmeleetitlearray[23];
 	}
 	document.getElementById("meleeSkill").innerHTML = meleeSkill;
 	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
@@ -228,10 +237,42 @@ function addMeleeSkill3(){
 	if(meleeSkill>3999999 && meleeSkill<7000000){
 		zachmeleetitle = zachmeleetitlearray[22];
 	}
+	if(meleeSkill>6999999 && meleeSkill<30000000){
+		zachmeleetitle = zachmeleetitlearray[23];
+	}
 	document.getElementById("meleeSkill").innerHTML = meleeSkill;
 	document.getElementById("zachmeleetitle").innerHTML = zachmeleetitle;
 }
 
+function startbrian(){
+	siteLayout = 4;
+}
+function agirlintranslation(){
+	agirlintranslationp.style.display = "block";
+}
+
+function startjon(){
+	siteLayout = 5;
+}
+
+function startluke(){
+	siteLayout = 6;
+}
+function revealsex(){
+	straight.style.display = "block";
+}
+
+function startjames(){
+	siteLayout = 7;
+	jamesstart = 1;
+}
+function containlaughter(){
+	laughmeter -= (Math.floor(laughmeter/4));
+	document.getElementById("laughmeter").innerHTML = laughmeter;
+}
+function revealFired(){
+	fired.style.display = "block";
+}
 //global JD variables
 var choiceAhighlight = 0;
 var choiceBhighlight = 0;
@@ -503,6 +544,11 @@ window.setInterval(function(){
 	if(siteLayout == 1){
 		mainmenu.style.display = "inline-block";
 		jddiv.style.display = "none";
+		briandiv.style.display = "none";
+		zachdiv.style.display = "none";
+		lukediv.style.display = "none";
+		jamesdiv.style.display = "none";
+		jondiv.style.display = "none";
 	}
 	if(siteLayout == 2){
 		mainmenu.style.display = "none";
@@ -511,11 +557,37 @@ window.setInterval(function(){
 	if(siteLayout == 3){
 		mainmenu.style.display = "none";
 		zachdiv.style.display = "inline-block";
+		jamesdiv.style.display = "none";
+	}
+	if(siteLayout == 4){
+		mainmenu.style.display = "none";
+		briandiv.style.display = "inline-block";
+	}
+	if(siteLayout == 5){
+		mainmenu.style.display = "none";
+		jondiv.style.display = "inline-block";
+	}
+	if(siteLayout == 6){
+		mainmenu.style.display = "none";
+		lukediv.style.display = "inline-block";
+	}
+	if(siteLayout == 7){
+		mainmenu.style.display = "none";
+		jamesdiv.style.display = "inline-block";
 	}
 	if(siteLayout != 1){
 		backbutton.style.display = "block";
 	}
 	else{
 		backbutton.style.display = "none";
+	}
+	
+	if(jamesstart == 1){
+		laughmeter += (Math.floor(laughmeter/10))+1;
+		document.getElementById("laughmeter").innerHTML = laughmeter;
+	}
+	if(laughmeter>999){
+		revealFired();
+		jamesstart = 0;
 	}
 }, 1000);
